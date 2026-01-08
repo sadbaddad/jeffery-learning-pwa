@@ -1,4 +1,4 @@
-# 🤖 Jeffery - Self-Learning PWA
+# Jeffery - Self-Learning PWA
 
 Jeffery is a mobile-first Progressive Web App that learns new capabilities by asking an LLM API how to implement tasks, then generates and stores JavaScript functions dynamically.
 
