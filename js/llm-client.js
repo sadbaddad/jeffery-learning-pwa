@@ -16,7 +16,7 @@ const llmClient = {
   init() {
     // Load API key from localStorage if available
     this.apiKey = localStorage.getItem('llm_api_key');
-    this.provider = localStorage.getItem('llm_provider') || 'grok';
+    this.provider = localStorage.getItem('llm_provider') || 'custom';
     this.endpoint = this.endpoints[this.provider];
     
     if (!this.apiKey) {
@@ -25,7 +25,7 @@ const llmClient = {
   },
   
   // Set API key
-  setApiKey(key, provider = 'grok') {
+  setApiKey(key, provider = 'custom') {
     this.apiKey = key;
     this.provider = provider;
     this.endpoint = this.endpoints[provider];
