@@ -2,14 +2,14 @@
 const llmClient = {
   apiKey: null,
   endpoint: null,
-  provider: 'grok', // Options: 'grok', 'tinyllama', or custom
+  provider: 'custom', // Options: 'grok', 'tinyllama', or custom
   
   // API endpoints for different providers
   endpoints: {
     grok: 'https://api.x.ai/v1/chat/completions',
     // TinyLlama would typically run locally or via HuggingFace
     tinyllama: 'https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0',
-    custom: '' // User-defined endpoint
+    custom: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?' // User-defined endpoint
   },
   
   // Initialize LLM client
